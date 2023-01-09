@@ -345,9 +345,19 @@ for (let i = 1; i < 1000; i++) {
 console.log(resultMewtwo)
 
 
-
+let undefinedEnCas = undefined;
 
 
 // Exo pydefis Les pouvoirs psychiques de Psystigri
 // Planquez-vous, Psystigri se déchaine
 
+
+
+
+
+
+// reduce
+
+
+
+//parseInt
