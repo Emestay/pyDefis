@@ -330,7 +330,7 @@ function thorCount(wordsThor){
 // Exo pydefis Pokemon piege numerique
 
 
-const resultMewtwo = [];
+let resultMewtwo = [];
 
 for (let i = 1; i < 1000; i++) {
   
