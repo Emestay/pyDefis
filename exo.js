@@ -321,6 +321,32 @@ function thorCount(wordsThor){
     }
 }
 
-console.log(thorCount(wordsThor));
+// console.log(thorCount(wordsThor));
 
 
+
+
+
+// Exo pydefis Pokemon piege numerique
+
+
+const resultMewtwo = [];
+
+for (let i = 1; i < 1000; i++) {
+  
+  if (i % 7 === 0) {
+    const sum = i.toString().split('').reduce((a, b) => a + parseInt(b), 0);
+    if (sum === 11) {
+      resultMewtwo.push(i);
+    }
+  }
+}
+
+console.log(resultMewtwo)
+
+
+
+
+
+// Exo pydefis Les pouvoirs psychiques de Psystigri
+// Planquez-vous, Psystigri se déchaine
