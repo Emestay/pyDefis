@@ -10,14 +10,33 @@
 
 <body>
     <script src="exo.js"></script>
-    <main>
+    <!-- <script src="random.js"></script> -->
 
 
-        <div class="boutonContainer">
-            <button id="bouttonClick" class="bouttonClick" >Clique </button>
-            <p id="truc" class="truc"></p>
-        </div>
-    </main>
+
+    <div class="boutonContainer">
+        <button class="bouttonClick" onclick=randomNbr()>Clique </button>
+        <!-- <button  class="bouttonClick"  >Clique </button> -->
+        <div class="truc"> </div>
+    </div>
+
+
+
+    
+
+    <script>
+        let button = document.querySelector(".bouttonClick");
+        let display = document.querySelector(".truc");
+        let text = document.querySelector('.truc');
+        // document.querySelector("#myBtn").addEventListener("click", myFunction);
+        function randomNbr() {
+            display.textContent = Math.floor(Math.random() * 101);
+
+        }
+    </script>
+
+
+
 </body>
 <style>
     body {
@@ -47,20 +66,23 @@
         font-weight: bold;
         border-radius: 0px;
         box-shadow: 3px 4px 0px 0px rgba(255, 255, 255, 1);
-        
+        place-self: center;
         background: rgba(255, 255, 255, 1);
     }
 
-    .bouttonClick:hover{
+    .bouttonClick:hover {
         background: rgba(155, 155, 155, 1);
         color: #fff;
         border-color: rgba(0, 0, 0, 1);
         box-shadow: 3px 4px 0px 0px rgba(100, 100, 100, 1);
     }
-    .truc{
+
+    .truc {
         grid-area: truc;
         color: aliceblue;
-        size: 50px;
+        size: 90px;
+        place-self: center;
+        
     }
 </style>
 
