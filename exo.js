@@ -465,3 +465,7 @@ let f10 = (a,b)=>{
 f10(2, 'Youss');
 
 
+// floor pour entier, random * 101 pour avoir 100 compris car random uniquement de 0 a 1 et floor
+let randomNbr=()=> Math.floor(Math.random() * 101);
+
+console.log(randomNbr());
