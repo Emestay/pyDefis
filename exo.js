@@ -468,15 +468,25 @@ f10(2, 'Youss');
 // floor pour entier, random * 101 pour avoir 100 compris car random uniquement de 0 a 1 et floor
 
 
-const button = document.querySelector('.bouttonClick');
-const display = document.querySelector('.truc');
+// const button = document.getElementsById("bouttonClick");
 
-button.addEventListener('click', () => { 
+
+
+
+
+document.getElementsByID("bouttonClick").addEventListener("click", randomNbr);
+const display = document.getElementsByID("truc");
+
+function randomNbr() { 
     let randomNumber = Math.floor(Math.random() * 101);
     display.textContent = randomNumber;
-});
+};
 
 
+
+
+// button.style.backgroundColor = "lightblue";
+// display.style.backgroundColor = "lightblue";
 
 
 
