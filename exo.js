@@ -466,9 +466,17 @@ f10(2, 'Youss');
 
 
 // floor pour entier, random * 101 pour avoir 100 compris car random uniquement de 0 a 1 et floor
-let randomNbr=()=> Math.floor(Math.random() * 101);
 
-console.log(randomNbr());
+
+const button = document.querySelector('.bouttonClick');
+const display = document.querySelector('.truc');
+
+button.addEventListener('click', () => { 
+    let randomNumber = Math.floor(Math.random() * 101);
+    display.textContent = randomNumber;
+});
+
+
 
 
 
@@ -494,9 +502,9 @@ Par exemple, l'appel à `countDown(3)` devra afficher
 0
 */
 function countDown(a){
-    // if(a <= 0){
-    //     return;
-    // }
+    if(a <= 0){
+        return alert('NIQUE TOI');
+    }
     for (let i = a; i >= 0 ; i --){
         console.log(i);
     }
@@ -539,7 +547,7 @@ function evenNumbers(a, b) {
     }
   }
 
-  evenNumbers(3, 500)
+  evenNumbers(3, 22);
 
 
 
@@ -557,7 +565,7 @@ function euclide (a,b){
     if (b === 0){
         return a;
     }
-    return euclide(b,(a%b));
+    euclide(b,(a%b));
 }
 
 
