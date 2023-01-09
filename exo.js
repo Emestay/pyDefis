@@ -342,6 +342,23 @@ for (let i = 1; i < 1000; i++) {
   }
 }
 
+/* 2547 2547%10 = 7 
+2547 - 7 = 2540
+2540/10 = 254
+254%10 = 4 
+254 - 4 = 250
+250/10 = 25
+25%10 = 5
+25-5
+20/10 = 2
+2%10 = 2
+2-2 = 0
+0/10 = 0
+
+
+Bossé le modulo
+
+*/
 console.log(resultMewtwo);
 
 
@@ -552,7 +569,7 @@ function euclide (a,b){
     if (b === 0){
         return a;
     }
-    euclide(b,(a%b));
+    return euclide(b,(a%b));
 }
 
 
@@ -561,15 +578,21 @@ function euclide (a,b){
 */
 
 /* euclide (6,10)
-euclide(10, (6%10))  =>6%10 = 6
-euclide(6,6)
-euclide (6, 6%6) 6%6 = 0
-euclide(6, 0)
+euclide(10, (10%6))  =>10%6 = 4
+euclide(10,4)
+euclide (10, 4%10) 4%10 = 4
+euclide(6, 6)
+euclide(6, 6%6) 6%6 = 0
+
+
+
+
+
 b ===0
 donc return de a
-a = 6
+a = 
 
-console.log(euclide (6,10)) = 6
+console.log(euclide (6,10)) = 
 */
 
 console.log(euclide(6,10));
