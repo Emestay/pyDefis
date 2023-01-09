@@ -350,3 +350,4 @@ console.log(resultMewtwo)
 
 // Exo pydefis Les pouvoirs psychiques de Psystigri
 // Planquez-vous, Psystigri se déchaine
+
