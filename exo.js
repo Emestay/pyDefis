@@ -361,3 +361,105 @@ let undefinedEnCas = undefined;
 
 
 //parseInt
+
+
+function sayHello(n1 ,n2){
+    console.log("je calcule avec" , n1 ,"et", n2)
+    return n1 + 10*n2;
+    // ne fonctionne pas du coup : console.log("j'ai trouve");
+}
+function fff(n1 , n2){
+    return n1 + 10*n2;
+}
+
+console.log(fff(1 , fff(2,3)));
+console.log(sayHello(1,2));
+
+
+// Exo pierre
+
+// Écrire une fonction f1 qui ne prend rien en entrée, et qui affiche 17 dans la console.
+const f1 = () => console.log(17);
+f1();
+
+
+
+// Écrire une fonction f2 qui ne prend rien en entrée, et qui retourne 17.
+// Utiliser la fonction f2 pour afficher 17 dans la console.
+const f2 = () => 17;
+console.log(f2());
+// Écrire une fonction f3 qui prend un nombre en entrée et qui affiche dans la console le double de ce nombre.
+// Utiliser la fonction f3 pour écrire dans la console le double de 99.
+const f3 = (a) => console.log(a*2);
+f3(99);
+
+// Écrire une fonction f4 qui prend un nombre en entrée et qui retourne le double de ce nombre.
+// Utiliser la fonction f4 pour écrire dans la console le double de 99.
+// Utiliser la fonction f4 pour stocker dans une variable appelée a le double de 99.
+const f4 = (a) => a*2;
+console.log(f4(99));
+doubleA = f4(99);
+console.log("test du double a" , doubleA);
+
+
+// Écrire une fonction f5 qui prend en entrée deux nombres et qui affiche dans la console la somme de ces deux nombres.
+// Utiliser la fonction f5 pour écrire dans la console la somme de 42 et 77.
+const f5 = (a,b) => console.log(a + b);
+f5(42, 47);
+
+
+// Écrire une fonction f6 qui prend en entrée deux nombres et qui retourne la somme de ces deux nombres.
+// Utiliser la fonction f6 pour écrire dans la console la somme de 42 et 77.
+// Utiliser la fonction f6 pour incrémenter la variable a de la somme de 42 et 77.
+const f6 = (a, b) => a+b;
+doubleA += f6(42, 77);
+console.log("Incrémentation de double = " , doubleA);
+
+
+// Écrire une fonction f7 qui prend deux nombres en entrée et qui retourne le plus grand des deux.
+let f7 = (a,b) => (a > b) ? a + ' a plus grand' : b + ' b plus grand';
+
+console.log(f7(10, 50));
+console.log(f7(20, 10));
+console.log(f7(10, 1));
+console.log(f7(10000, 50));
+console.log(f7(10, 500000));
+console.log(f7(10, 10));
+
+
+
+// Écrire une fonction f8 qui prend trois nombres en entrée et qui retourne le plus grand des trois.
+let f8 = (a,b,c) => {
+    if(a > b && a > c){
+        return a;
+    }
+    if( b > a && b > c){
+        return b;
+    }
+    if(c > a && c >b){
+        return c;
+    }
+}
+
+console.log(f8(10,50,80));
+console.log(f8(10,80,40));
+console.log(f8(80,50,10));
+// Écrire une fonction f9 qui prend un nombre et un mot en entrée, et qui affiche dans la console ce mot ce nombre de fois.
+
+let f9 = (a,b) =>{ 
+    for(let i = 0 ; i < a ; i++){
+        console.log(b)
+    }  
+}
+
+f9(10, 'roger')
+
+let f10 = (a,b)=>{
+        if(a <= 0){
+            return;
+        }
+    console.log(b);
+    f10(a - 1, b);
+}
+
+f10(9, 'Youss');
