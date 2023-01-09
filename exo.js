@@ -573,3 +573,6 @@ console.log(euclide (6,10)) = 6
 */
 
 console.log(euclide(6,10));
+
+
+
