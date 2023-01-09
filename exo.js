@@ -342,7 +342,7 @@ for (let i = 1; i < 1000; i++) {
   }
 }
 
-console.log(resultMewtwo)
+console.log(resultMewtwo);
 
 
 let undefinedEnCas = undefined;
@@ -452,7 +452,7 @@ let f9 = (a,b) =>{
     }  
 }
 
-f9(10, 'roger')
+f9(10, 'roger');
 
 let f10 = (a,b)=>{
         if(a <= 0){
@@ -462,4 +462,6 @@ let f10 = (a,b)=>{
     f10(a - 1, b);
 }
 
-f10(012, 'Youss');
+f10(2, 'Youss');
+
+
