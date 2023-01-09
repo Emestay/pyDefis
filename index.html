@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script src="exo.js"></script>
+    <main>
+        <div class="boutonContainer">
+            <button class="bouttonClick" onclick=randomNbr()>Clique </button>
+            <p class="truc">{{this.randomNbr}}</p>
+        </div>
+    </main>
 </body>
+<style>
+    body {
+        background-color: black;
+    }
+
+    .boutonContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1.3fr 0.4fr 1.3fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            ". . ."
+            ". bouttonClick ."
+            ". truc .";
+    }
+
+    .bouttonClick {
+        grid-area: bouttonClick;
+        font-size: 15px;
+        font-family: Arial;
+        width: 140px;
+        height: 50px;
+        border-width: 1px;
+        color: black;
+        border-color: white;
+        font-weight: bold;
+        border-radius: 0px;
+        box-shadow: 3px 4px 0px 0px rgba(255, 255, 255, 1);
+        
+        background: rgba(255, 255, 255, 1);
+    }
+
+    .bouttonClick:hover{
+        background: rgba(155, 155, 155, 1);
+        color: #fff;
+        border-color: rgba(0, 0, 0, 1);
+        box-shadow: 3px 4px 0px 0px rgba(100, 100, 100, 1);
+    }
+    .truc{
+        grid-area: truc;
+        color: aliceblue;
+        size: 50px;
+    }
+</style>
+
 </html>
