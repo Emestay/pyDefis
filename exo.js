@@ -599,3 +599,4 @@ console.log(euclide(6,10));
 
 
 
+

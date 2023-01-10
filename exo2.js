@@ -88,15 +88,48 @@ console.log(`Donc il me faut ${secondes} secondes pour percer ${doorThickness} c
 
 
 
-// for ((a, b) in pokemon) {
-//     constructor(a, b){
-//         this.name = ' ';
-//         this.coordinate = ' ';
-//     }
-// }
 
-// class PokemonListe {
-//     constructor() {
 
-//     }
-// }
+
+
+
+
+
+function g(n){
+    return console.log(n);
+}
+g('Sans regrets');
+
+// Sommes de 3 carrés
+
+// Fonction pour vérifier si un nombre peut être écrit comme somme de 3 carrés
+// sans le Math.sqrt() ça bug, mais ca me permet de virer de tte facon les trucs inutiles
+
+
+
+function isSumOfThreeSquares(n) {
+    for (let i = 0; i <= Math.sqrt(n); i++) {
+      for (let j = i; j <= Math.sqrt(n); j++) {
+        for (let k = j; k <= Math.sqrt(n); k++) {
+          if (i * i + j * j + k * k === n) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+  }
+  
+  let countOfThreeSquaresPossible = 0;
+  
+  for (let i = 1; i <= 10000; i++) {
+    if (!isSumOfThreeSquares(i)) {
+        countOfThreeSquaresPossible++;
+    }
+  }
+  
+  console.log(countOfThreeSquaresPossible);
+  console.log(!countOfThreeSquaresPossible);
+
+
+
