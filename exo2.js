@@ -109,9 +109,13 @@ g('Sans regrets');
 
 function isSumOfThreeSquares(n) {
     for (let i = 0; i <= Math.sqrt(n); i++) {
+
       for (let j = i; j <= Math.sqrt(n); j++) {
         for (let k = j; k <= Math.sqrt(n); k++) {
+
+
           if (i * i + j * j + k * k === n) {
+            
             return true;
           }
         }
