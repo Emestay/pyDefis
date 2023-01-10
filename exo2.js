@@ -207,6 +207,6 @@ divideByTwo(tab1);
 
 
 // 13) Pour vérifier si vous êtes correctement arrivé(e) jusqu'ici, essayez les deux lignes de code suivantes :
+
 console.log(tab1.reduce((acc,cur)=> acc+String.fromCharCode(cur),""));
 console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
-// (On ne cherchera pas à comprendre ça)
