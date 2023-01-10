@@ -50,3 +50,25 @@ for (let i = 0; i < ewokNameWithVowels.length; i++) {
 console.log(cptEwokValid);
 
 
+// SW I : À l'assaut de Gunray
+// Découpage de la porte blindée
+
+
+/*secondes pour moitié de porte , secondes pour porte complete
+8 * E
+E = 3 - 0.005 * V
+E ==> Epaisseur de la porte pénétré
+V ==> Volume de métal fondu */
+
+let E = 0;
+let V = 0;
+let secondes = 0;
+
+const doorThickness = 70; // 70/2
+
+while (E < doorThickness) {
+    E += (3 - 0.005 * V);
+    V += (8 * (3 - 0.005 * V));
+    secondes++;
+}
+console.log(`Donc il me faut ${secondes} secondes pour percer ${doorThickness} centimétrews de porte`);
