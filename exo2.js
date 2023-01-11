@@ -203,8 +203,12 @@ function divideByTwo(tab1) {
       tab1[i] = tab1[i] / 2;
     }
 }
-divideByTwo(tab1);
 
+let map1 = tab1.map(x => x / 2);
+
+console.log(`en utilisant .map() ${map1}`)
+divideByTwo(tab1);
+console.log(`en utilisant une fonction ${tab1}`)
 
 // 13) Pour vérifier si vous êtes correctement arrivé(e) jusqu'ici, essayez les deux lignes de code suivantes :
 
