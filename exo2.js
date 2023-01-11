@@ -218,3 +218,106 @@ console.log(tab1.reduce((acc, cur) => acc + String.fromCharCode(cur), ""));
 console.log(String.fromCharCode(maVariable) + String.fromCharCode(maVariable - 17));
 
 
+
+
+// %Modulo canvas
+
+const canvas = document.querySelector('#canvas');
+const width = canvas.width;
+const height = canvas.height;
+
+
+
+// Exercice all2_1 :	écrire une fonction qui retourne **la position** du plus grand élément d'un tableau.
+function biggest(tablo){
+    let biggest = tablo[0];
+    let biggestIndex = 0;
+
+    for (let i = 1; i < tablo.length; i++) {
+        if (tablo[i] > biggest) {
+            biggest = tablo[i];
+            biggestIndex = i;
+        }
+    }
+    return biggestIndex;
+}
+
+g(biggest(tab1));
+g(tab1);
+
+
+// Exercice all2_2 : écrire une fonction qui fait la somme de tous les éléments d'un tableau.
+
+function sumArray(tablo) {
+    let total = 0;
+    for (let i = 0; i < tablo.length; i++) {
+        total += tablo[i];
+    }
+    return total;
+}
+
+
+// Exercice all2_3 : écrire une fonction qui retourne la somme des valeurs positives d'une liste.
+function sumPositiveValues(tablo) {
+    var total = 0;
+    for (var i = 0; i < tablo.length; i++) {
+        if (tablo[i] > 0) {
+            total += tablo[i];
+        }
+    }
+    return total;
+}
+
+
+let tabTest = [-1000, -500, 500, 1000];
+g(sumPositiveValues(tabTest));
+
+// Exercice all2_4 : En utilisant les deux fonctions précédentes, écrire une fonction qui retourne la somme des valeurs négatives d'une liste.
+
+
+function sumNegativeValues(tablo) {
+    var sumPositive = sumPositiveValues(tablo);
+    var sumTotal = sumArray(tablo);
+    return sumTotal - sumPositive;
+}
+
+g(sumNegativeValues(tabTest));
+
+
+
+//Exercice bonus (beaucoup plus compliqué) :
+/*
+Tour de Hanoi : https://www.mathsisfun.com/games/towerofhanoi.html
+Il y a 3 tours, et des disques sur l'une d'entre elles. On ne peut déplacer qu'un seul disque à la fois, et on ne peut pas placer un disque sur un autre plus petit.
+
+Le but est d'écrire une fonction qui **affiche dans la console** la solution de ce problème.
+Exemple avec le code (obfusqué) plus bas :
+*/
+
+
+// hanoi(3,"un","trois","deux"); 
+// Je demande : comment déplacer 3 disques de la tour "un" vers la tour "trois", avec la tour "deux" en intermédiaire.
+/*
+
+     |            |            |
+     |            |            |
+     |            |            |
+    -|-           |            |
+   --|--          |            |
+  ---|---         |            |
+=====|=====  =====|=====  =====|=====
+    un          deux         trois
+*/
+
+
+
+
+// Résultat (dans la console) :
+// Déplacer de un vers trois
+// Déplacer de un vers deux
+// Déplacer de trois vers deux
+// Déplacer de un vers trois
+// Déplacer de deux vers un
+// Déplacer de deux vers trois
+// Déplacer de un vers trois
+
