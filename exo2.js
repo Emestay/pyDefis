@@ -105,13 +105,9 @@ console.log(`Donc il me faut ${secondes} secondes pour percer ${doorThickness} c
 
 function isSumOfThreeSquares(n) {
     for (let i = 0; i <= Math.sqrt(n); i++) {
-
         for (let j = i; j <= Math.sqrt(n); j++) {
             for (let k = j; k <= Math.sqrt(n); k++) {
-
-
                 if (i * i + j * j + k * k === n) {
-
                     return true;
                 }
             }
@@ -284,40 +280,4 @@ function sumNegativeValues(tablo) {
 g(sumNegativeValues(tabTest));
 
 
-
-//Exercice bonus (beaucoup plus compliqué) :
-/*
-Tour de Hanoi : https://www.mathsisfun.com/games/towerofhanoi.html
-Il y a 3 tours, et des disques sur l'une d'entre elles. On ne peut déplacer qu'un seul disque à la fois, et on ne peut pas placer un disque sur un autre plus petit.
-
-Le but est d'écrire une fonction qui **affiche dans la console** la solution de ce problème.
-Exemple avec le code (obfusqué) plus bas :
-*/
-
-
-// hanoi(3,"un","trois","deux"); 
-// Je demande : comment déplacer 3 disques de la tour "un" vers la tour "trois", avec la tour "deux" en intermédiaire.
-/*
-
-     |            |            |
-     |            |            |
-     |            |            |
-    -|-           |            |
-   --|--          |            |
-  ---|---         |            |
-=====|=====  =====|=====  =====|=====
-    un          deux         trois
-*/
-
-
-
-
-// Résultat (dans la console) :
-// Déplacer de un vers trois
-// Déplacer de un vers deux
-// Déplacer de trois vers deux
-// Déplacer de un vers trois
-// Déplacer de deux vers un
-// Déplacer de deux vers trois
-// Déplacer de un vers trois
 
