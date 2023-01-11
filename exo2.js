@@ -147,14 +147,14 @@ g('Sans regrets');
 function age(a) {
     if (a < 18) {
         g("la personne est mineurs.")
-    } 
-    if( a >= 18 && a < 65){
+    }
+    if (a >= 18 && a < 65) {
         g("la personne est majeur.")
     }
-    else if(a >= 65 && a <= 200) {
+    else if (a >= 65 && a <= 200) {
         g("la personne est senior.")
     }
-    else if ( a > 200){
+    else if (a > 200) {
         g("la personne est morte.")
     }
 }
@@ -172,22 +172,22 @@ tab1 = [144, 202, 216, 216, 222, 64];
 // 2) Ajouter le nombre 0 à la fin du tableau tab1.
 tab1.push(0);
 // 3) Afficher *un par un* tous les éléments du tableau tab1.
-for(let i = 0; i <tab1.length; i++){
+for (let i = 0; i < tab1.length; i++) {
     console.log(tab1[i]);
 }
 // 4) Retirer le dernier élément du tableau tab1.
 tab1.pop();
-g(tab1)
+g(tab1);
 // 5) Créer un tableau tab2 qui contient les nombres 238, 222, 228, 216, 200.
-tab2 = [238, 222, 228, 216, 200]
+tab2 = [238, 222, 228, 216, 200];
 // 6) Ajouter le nombre 58 à la fin de tab2.
 tab2.push(58);
 // 7) Ajouter *un par un* tous les éléments du tableau tab2 à la fin du tableau tab1.
-for(let i = 0; i <tab2.length; i++){
+for (let i = 0; i < tab2.length; i++) {
     tab1.push(tab2[i]);
 }
 // 8) Afficher *un par un* tous les éléments du tableau tab1.
-for(let i = 0; i <tab1.length; i++){
+for (let i = 0; i < tab1.length; i++) {
     console.log(tab1[i]);
 }
 // 9) Retirer et stocker dans la variable maVariable le dernier élément du tableau tab1.
@@ -200,17 +200,21 @@ tab1.push(66);
 
 function divideByTwo(tab1) {
     for (let i = 0; i < tab1.length; i++) {
-      tab1[i] = tab1[i] / 2;
+        tab1[i] = tab1[i] / 2;
     }
 }
 
-let map1 = tab1.map(x => x / 2);
+let map1 = tab1.map(tablo => tablo / 2);
 
-console.log(`en utilisant .map() ${map1}`)
+console.log(`en utilisant .map() ${map1}`);
+
 divideByTwo(tab1);
-console.log(`en utilisant une fonction ${tab1}`)
+
+console.log(`en utilisant une fonction ${tab1}`);
 
 // 13) Pour vérifier si vous êtes correctement arrivé(e) jusqu'ici, essayez les deux lignes de code suivantes :
 
-console.log(tab1.reduce((acc,cur)=> acc+String.fromCharCode(cur),""));
-console.log(String.fromCharCode(maVariable)+String.fromCharCode(maVariable-17));
+console.log(tab1.reduce((acc, cur) => acc + String.fromCharCode(cur), ""));
+console.log(String.fromCharCode(maVariable) + String.fromCharCode(maVariable - 17));
+
+
