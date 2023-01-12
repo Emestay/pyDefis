@@ -36,7 +36,7 @@ console.log(sommesExoDeux(1435));
 // Exo 3 de pydefi
 
 
-let aaa;
+
 function numDeBombe(u, n) {
     for (let i = 0; i < n; i++) {
         u = (u * 13) % 1000;
