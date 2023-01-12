@@ -18,3 +18,25 @@ function decompose(n,base){
 
     return tab;
 }
+
+// Dicothomie Wass
+
+function dichotomie(tab,n,i1,i2){
+
+
+
+    if(i1>i2) {
+        return false; 
+    }
+
+
+    let middle=(i1+i2)/2; 
+
+    if(tab[middle]==n) {
+        return true; 
+    } else if (n>tab[middle]){
+        return dichotomie(tab,n,middle+1, i2); 
+    } else {
+        return dichotomie(tab,n,i2,middle-1); 
+    }
+}
