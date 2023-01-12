@@ -40,3 +40,34 @@ function dichotomie(tab,n,i1,i2){
         return dichotomie(tab,n,i2,middle-1); 
     }
 }
+
+
+//traducteur chiffre romain
+
+
+let dicoRomain = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+};
+
+function romanTrad(word){
+    let sum = 0;
+    for(let i =0 ; i < word.length ; i++){
+        if(dicoRomain[word[i]] < dicoRomain[word[i+1]]){
+            sum -= dicoRomain[word[i]];
+        }else{
+            sum += dicoRomain[word[i]];
+        }
+    }
+    return sum;
+};
+
+
+console.log(romanTrad('XVI'));
+console.log(romanTrad('MMM'));
+console.log(romanTrad('IX'));

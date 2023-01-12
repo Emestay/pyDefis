@@ -599,4 +599,29 @@ console.log(euclide(6,10));
 
 
 
+let dicoRomain = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+};
 
+function romanTrad(word){
+    let sum = 0;
+    for(let i =0 ; i < word.length ; i++){
+        if(match[word[i]] < match[word[i+1]]){
+            sum -= match[word[i]]
+        }else{
+            sum += match[word[i]]
+        }
+    }
+    return sum;
+}
+
+
+console.log(romanTrad('XVI'));
+console.log(romanTrad('MMM'));
+console.log(romanTrad('IX'));
