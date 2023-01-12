@@ -60,7 +60,7 @@ function romanTrad(word){
         }
     }
     return sum;
-};
+}
 
 
 console.log(romanTrad('XVI'));
