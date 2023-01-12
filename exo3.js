@@ -23,15 +23,10 @@ function decompose(n,base){
 
 function dichotomie(tab,n,i1,i2){
 
-
-
     if(i1>i2) {
         return false; 
     }
-
-
     let middle=(i1+i2)/2; 
-
     if(tab[middle]==n) {
         return true; 
     } else if (n>tab[middle]){
